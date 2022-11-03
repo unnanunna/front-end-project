@@ -1,0 +1,12 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss/:dist/css/"
+  },
+  "author": "Unna",
+  "license": "MIT"
+
+}
