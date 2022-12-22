@@ -1,5 +1,5 @@
 $primary-color: rgb(160, 171, 176);
-$secondary-color: rgb(220, 146, 215);
+$secondary-color: rgb(201, 135, 197);
 $show-home-image: true;
 $home-image: url(../images/background.jpg);
 $background-opacity: 0.8;
@@ -31,6 +31,16 @@ $background-opacity: 0.8;
 
 html {
     font-size: 10px;
+}
+
+//Set text color
+@function set-text-color($color) {
+    @if (lightness($color) > 70) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+
 }
 
 //Media query mixins

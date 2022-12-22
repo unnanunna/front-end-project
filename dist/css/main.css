@@ -75,7 +75,7 @@ html {
   height: 250px;
   background: url(../images/profilepic.jpg);
   border-radius: 50%;
-  border: solid 3px rgb(220, 146, 215);
+  border: solid 3px rgb(201, 135, 197);
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -85,7 +85,7 @@ html {
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: rgb(220, 146, 215);
+  color: rgb(201, 135, 197);
 }
 .menu .nav-link {
   display: inline-block;
@@ -99,7 +99,7 @@ html {
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: rgb(220, 146, 215);
+  color: rgb(201, 135, 197);
 }
 
 .nav-item:nth-child(1) {
@@ -118,45 +118,6 @@ html {
   transition-delay: 0.4s;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center;
-  }
-  main .lg-heading {
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
-  ul.menu-nav,
-div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-  }
-  ul.menu-nav.show,
-div.menu-branding.show {
-    transform: translate3d(0, 0, 0);
-  }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-  }
-  .menu-branding .portrait {
-    background: url(../images/profilepic_small.jpg);
-    width: 150px;
-    height: 150px;
-  }
-}
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -215,12 +176,12 @@ header {
 }
 
 .text-secondary {
-  color: rgb(220, 146, 215);
+  color: rgb(201, 135, 197);
 }
 
 main {
   padding: 6rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 }
 main .icons {
   margin-top: 1rem;
@@ -229,7 +190,7 @@ main .icons a {
   padding: 0.7rem;
 }
 main .icons a:hover {
-  color: rgb(220, 146, 215);
+  color: rgb(201, 135, 197);
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -237,6 +198,119 @@ main#home {
 }
 main#home h1 {
   margin-top: 20vh;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(9, 1fr);
+}
+.about-info .bio-image {
+  grid-column: span 4;
+  margin: auto;
+  border-radius: 50%;
+  border: solid 3px rgb(201, 135, 197);
+}
+.about-info .bio {
+  grid-column: span 5;
+  font-size: 1.5rem;
+}
+.about-info .job-1 {
+  grid-row-start: 2;
+  grid-column: span 3;
+}
+.about-info .job-2 {
+  grid-row-start: 2;
+  grid-column: span 3;
+}
+.about-info .job-3 {
+  grid-row-start: 2;
+  grid-column: span 3;
+}
+.about-info .job {
+  background: #aeb7bc;
+  padding: 0.5rem;
+  border-bottom: rgb(201, 135, 197) 5px solid;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #849299;
+  color: #fff;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav,
+div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait {
+    background: url(../images/profilepic_small.jpg);
+    width: 150px;
+    height: 150px;
+  }
+  .about-info {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .about-info .bio-image {
+    grid-row-start: 1;
+    grid-column: 1/-1;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 3px rgb(201, 135, 197);
+  }
+  .about-info .bio {
+    grid-row-start: 2;
+    grid-column: 1/-1;
+    font-size: 1.5rem;
+  }
+  .about-info .job-1 {
+    grid-row-start: 3;
+    grid-column: 1/-1;
+  }
+  .about-info .job-2 {
+    grid-row-start: 4;
+    grid-column: 1/-1;
+  }
+  .about-info .job-3 {
+    grid-row-start: 5;
+    grid-column: 1/-1;
+  }
+  .about-info .job {
+    background: #aeb7bc;
+    padding: 0.5rem;
+    border-bottom: rgb(201, 135, 197) 5px solid;
+  }
+}
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
