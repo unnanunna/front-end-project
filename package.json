@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio website",
   "main": "index.js",
+  "homepage": "https://unnakalliomaki.github.io/portfolio",
   "scripts": {
-    "sass": "sass -w scss/:dist/css/"
+    "sass": "sass -w scss/:dist/css/",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Unna",
-  "license": "MIT"
-
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
