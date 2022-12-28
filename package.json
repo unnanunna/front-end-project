@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio website",
   "main": "index.js",
-  "homepage": "https://unnakalliomaki.github.io/portfolio",
+  "homepage": "https://unnanunna.github.io/portfolio",
   "scripts": {
     "sass": "sass -w scss/:dist/css/",
     "deploy": "gh-pages -d dist"
